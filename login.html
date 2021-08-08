@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PhoenixGear Login</title>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="phoenixLogin, phoenixgear" />
+		<meta name="description" content="phoenixgearlogin" />
+		<link href="images/phoenix.ico" rel="shortcut icon" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<link href="login.css" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/342bc127d0.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header class="menubar">
+			<div class="logo">
+				<a href="phoenixgear.html">
+					<img class="phoenix_logo" src="images/phoenixlogo.jpg" alt="logo" />
+				</a>
+			</div>
+			<nav class="content">
+				<ul>
+					<li>
+						<a href="phoenixgear.html"><i style="background-color: #2d2d2d;" class="fa fa-globe-americas"></i> PHOENIX OFFICIAL SITE</a>
+					</li>
+					<li>
+						<a href="#"><i style="background-color: #2d2d2d;" class="fa fa-comments"></i> PHOENIX FORUM</a>
+					</li>
+					<li><button id="bt" type="button" class="btn btn-secondary">English/English</button></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			<div class="login">
+				<h3>LOGIN</h3>
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+						<small id="note" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" />
+						<a id="forgot_pw" href="#">Forgot your password?</a>
+					</div>
+					<div>
+						<p style="color: white; margin-bottom: 0;">Captcha</p>
+						<a
+							href="#captcha-reflush"
+							onclick="document.getElementById('captcha-img').src='//register.msi.com/home/securimage_show?sid='+Math.random(); this.blur(); return false;"
+						>
+							<img id="captcha-img" src="images/capcha.png" style="width: 100%;" />
+						</a>
+						<input
+							class="form-control text-center"
+							name="captcha"
+							tabindex="3"
+							autocomplete="off"
+							placeholder="You need to calculate the answer X + Y = ?"
+							data-toggle="tooltip"
+							data-placement="top"
+							title="You need to calculate the answer X + Y = ?"
+						/>
+						<span style="color: #6c757d;" class="help-block" id="note">You need to calculate the answer X + Y = ?</span>
+					</div>
+					<div class="form-group form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1" />
+						<label class="form-check-label" for="exampleCheck1">Remember Account</label>
+					</div>
+					<div class="btLogin">
+						<button type="submit" class="btn btn-danger">Login</button>
+						<button type="submit" class="btn btn-danger">Create an Account</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<p>Copyright © 2020 Micro-Star Int'l Co.,Ltd. All rights reserved.</p>
+			<ul class="footer">
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms of Use</a></li>
+				<li><a href="#">Cookie Policy</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

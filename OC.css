@@ -1,0 +1,105 @@
+#OC {
+  background: #000 url("imagesMEG/bg3.webp") top center no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 2% 0 5%;
+  height: 1000px;
+}
+#OC .section__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 2%;
+  text-align: left;
+}
+#OC .section__header .title {
+  font-family: "Sarpanch", "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border-left: #fff solid 2px;
+  padding-left: 20px;
+  text-shadow: 0px 0px 4px #fc4a1a, 0px 0px 15px #fc4a1a, 0px 0px 4px #fc4a1a, 0px 0px 15px #fc4a1a;
+  font-size: 36px;
+  line-height: 1.2;
+}
+#OC .section__header .logo {
+  margin-right: 2%;
+}
+#OC .section__main .OC-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  overflow: hidden;
+}
+#OC .section__main .OC-container .OC-carousel {
+  width: 850px;
+  height: auto;
+  display: flex;
+}
+#OC .section__main .OC-container .OC-carousel .item {
+  width: 100%;
+  height: 100%;
+}
+#OC .section__main .OC-container .OC-carousel .item h5 {
+  font-family: "Sarpanch", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+#OC .section__main .OC-container .OC-carousel .item h5::before, #OC .section__main .OC-container .OC-carousel .item h5::after {
+  content: "";
+  display: inline-block;
+}
+#OC .section__main .OC-container .OC-carousel .item h5::before {
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 8px solid #fff;
+  padding-right: 1%;
+}
+#OC .section__main .OC-container .OC-carousel .item h5::after {
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 8px solid #fff;
+  padding-left: 1%;
+}
+#OC .section__main .OC-container .OC-carousel .item .IM-OC {
+  position: relative;
+  padding: 2%;
+  width: 80%;
+  margin: auto;
+}
+#OC .section__main .OC-container .OC-carousel .item .IM-OC::before, #OC .section__main .OC-container .OC-carousel .item .IM-OC::after {
+  display: inline-block;
+  position: absolute;
+}
+#OC .section__main .OC-container .OC-carousel .item .IM-OC::before {
+  content: url("imagesMEG/lightleft.webp");
+  top: 0;
+  left: 0;
+}
+#OC .section__main .OC-container .OC-carousel .item .IM-OC::after {
+  content: url("imagesMEG/lightright.webp");
+  bottom: 0;
+  right: 0;
+}
+#OC .section__main .OC-container .OC-carousel .item .IM-OC h4 {
+  font-family: "ONECND_Fonts-Bold", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+}
+#OC .section__main .OC-container .OC-carousel .active {
+  opacity: 1;
+}
+#OC .section__main .OC-container .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+#OC .section__main .OC-container .owl-nav .owl-prev,
+#OC .section__main .OC-container .owl-nav .owl-next {
+  width: 30px;
+  border-radius: 50%;
+  font-size: 48px;
+}
